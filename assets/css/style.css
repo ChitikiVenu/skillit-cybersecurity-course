@@ -167,7 +167,7 @@ header.site{
 
 .lead-form-section{padding:24px 0;}
 .lead-form-card{
-  max-width:1080px;margin:0 auto;background:var(--surface);border:1px solid var(--border);
+  max-width:1080px;margin:0 auto;background:var(--surface-2);border:1px solid var(--border);
   border-top:3px solid var(--cta);border-radius:14px;padding:18px 22px;
   box-shadow:0 16px 34px -22px rgba(16,21,31,.16);
 }
