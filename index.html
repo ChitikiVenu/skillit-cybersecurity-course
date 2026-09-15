@@ -82,10 +82,8 @@
           </div>
           <div class="form-field">
             <label for="hero-form-phone">Mobile Number</label>
-            <input type="tel" id="hero-form-phone" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+            <input type="tel" id="hero-form-phone" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" required>
           </div>
-        </div>
-        <div class="form-row">
           <div class="form-field">
             <label for="hero-form-profession">Profession</label>
             <select id="hero-form-profession" name="profession" required>
@@ -95,7 +93,7 @@
             </select>
           </div>
           <div class="form-field">
-            <label for="hero-form-course">Course Interested In</label>
+            <label for="hero-form-course">Course</label>
             <select id="hero-form-course" name="course" required>
               <option value="" disabled selected>Select a course</option>
             <option value="Cyber Security">Cyber Security</option>
@@ -105,11 +103,9 @@
             <option value="Data Analyst">Data Analyst</option>
             </select>
           </div>
+          <button type="submit" class="btn btn-primary form-submit">Request a Callback</button>
         </div>
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Request a Callback</button>
-          <span class="form-note">Our admissions team will call you back within 24 hours.</span>
-        </div>
+        <div class="form-note">Our admissions team will call you back within 24 hours.</div>
         <div class="form-success" hidden>Thanks — we've received your details. Our admissions team will call you back shortly.</div>
       </form>
     </div>
@@ -458,10 +454,8 @@
           </div>
           <div class="form-field">
             <label for="footer-form-phone">Mobile Number</label>
-            <input type="tel" id="footer-form-phone" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+            <input type="tel" id="footer-form-phone" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" required>
           </div>
-        </div>
-        <div class="form-row">
           <div class="form-field">
             <label for="footer-form-profession">Profession</label>
             <select id="footer-form-profession" name="profession" required>
@@ -471,7 +465,7 @@
             </select>
           </div>
           <div class="form-field">
-            <label for="footer-form-course">Course Interested In</label>
+            <label for="footer-form-course">Course</label>
             <select id="footer-form-course" name="course" required>
               <option value="" disabled selected>Select a course</option>
             <option value="Cyber Security">Cyber Security</option>
@@ -481,11 +475,9 @@
             <option value="Data Analyst">Data Analyst</option>
             </select>
           </div>
+          <button type="submit" class="btn btn-primary form-submit">Request a Callback</button>
         </div>
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Request a Callback</button>
-          <span class="form-note">Our admissions team will call you back within 24 hours.</span>
-        </div>
+        <div class="form-note">Our admissions team will call you back within 24 hours.</div>
         <div class="form-success" hidden>Thanks — we've received your details. Our admissions team will call you back shortly.</div>
       </form>
     </div>
@@ -496,7 +488,7 @@
 document.querySelectorAll('[data-lead-form]').forEach(function(form){
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    form.querySelectorAll('.form-field, .form-actions').forEach(function(el){ el.hidden = true; });
+    form.querySelectorAll('.form-row, .form-note').forEach(function(el){ el.hidden = true; });
     form.querySelector('.form-success').hidden = false;
   });
 });
