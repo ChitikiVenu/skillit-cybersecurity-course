@@ -70,8 +70,8 @@ header.site{
 }
 .btn-primary{background:var(--cta);color:#fff;}
 .btn-primary:hover{background:var(--cta-dark);}
-.btn-outline{border-color:var(--border);color:var(--text);}
-.btn-outline:hover{border-color:var(--accent);}
+.btn-outline{background:#ffffff;border-color:var(--border);color:var(--text);}
+.btn-outline:hover{border-color:var(--accent);box-shadow:0 4px 14px rgba(16,21,31,.08);}
 .btn-ghost{color:var(--text-dim);}
 .btn-sm{padding:8px 14px;font-size:13px;}
 
