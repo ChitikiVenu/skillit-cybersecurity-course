@@ -21,7 +21,7 @@
 │   └── index.html                                          → Module 5 — Advanced Exploitation, Cryptography & Mobile Security (2 Weeks / 20 Hrs)
 │
 ├── module-6-security-operations-cyber-defense/
-│   └── index.html                                          → Module 6 — Security Operations & Cyber Defense (2 Weeks / 20 Hrs)
+│   └── index.html                                          → Module 6 — AI-Powered Security Operations & Cyber Defense (2 Weeks / 20 Hrs)
 │
 └── assets/
     └── css/
@@ -56,6 +56,6 @@ A machine-readable `sitemap.xml` is included at the zip root for search-engine s
 ## Notes for whoever deploys this
 
 - Drop real tool logo SVGs/PNGs into `assets/img/tools/` and replace the `.tool-logo` placeholder `<div>` in each page with an `<img>` — the `aria-label`/`title` on every placeholder already carries the `[LOGO: ToolName]` marker so they're easy to find and swap.
-- All "Enroll Now" / "Talk to Advisor" buttons point to `#enroll`, which anchors to the footer. Wire these to your actual enrollment form/CRM before going live.
-- Salary figures on the overview page are broad, non-exaggerated indicative ranges — update with your placement-team's current data before publishing.
-- No AI branding or AI-tool references appear anywhere on the site, per brief — Module 6 was reframed from the source brochure's "AI-Powered Cyber Defence" into a traditional SOC/Blue-Team "Security Operations & Cyber Defense" module.
+- The "Book Career Counselling" button (orange, present on every hero and bottom CTA banner) links via `tel:` to the phone number in `data.py`'s `SITE` dict — update it there if the number changes. "Download Brochure" on the index hero links to the bundled PDF at `assets/downloads/`.
+- Salary and course-fee figures on the overview page are broad, indicative figures — update with your admissions team's current data before publishing.
+- Module 6 is branded "AI-Powered Security Operations & Cyber Defense" and its curriculum, tools, labs and projects reference AI/ML-assisted threat detection — this matches the source brochure's original AI-powered framing for this module.
